@@ -1,4 +1,4 @@
-console.log('App js Running')
+console.log("App js Running");
 
 // var a =5;
 // console.log(a);
@@ -22,8 +22,6 @@ console.log('App js Running')
 // console.log(b, typeof b)
 
 // console.log(typeof typeof 42)
-
-
 
 // let age;
 
@@ -55,13 +53,53 @@ console.log('App js Running')
 // let y = 12345678901234123
 // console.log({x})
 
-
 // let g = 0.1+0.2
 // console.log(+g.toFixed(2))
 // console.log(g
 
+// let username = 'muharrem';
 
-let username = 'muharrem';
+// console.log('merhaba', userName)
 
-console.log('merhaba', userName)
 
+
+//*****  sorular */
+
+/*
+function test(x, y) {
+  if (x > y) {
+    document.write(x);
+  } else {
+    document.write(y);
+  }
+}
+test(7, 3);
+
+function num() {
+  return 5 + 7;
+}
+console.log(typeof num);
+
+var num = [7, 12, 143, 54, 37];
+num.sort(function (a, b) {
+  return b - a;
+});
+console.log(num);  
+*/
+
+//******   Fıbonaccı  */ */
+
+/*
+let num1, num2, adet, counter;
+num1 = 0;
+num2 = 1;
+adet = Number(prompt("Kaç adet fibonacci sayısı istiyorsunuz: "));
+counter = 1;
+do {
+  console.log(`${counter}'inci fibonacci ${num2}`);
+  let total = num1 + num2;
+  num1 = num2;
+  num2 = total;
+  counter += 1;
+} while (counter <= adet);
+*/
