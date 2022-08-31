@@ -42,8 +42,10 @@ for(let i=0; i<veri.length; i++){
 
 //************ document.querySelectorAll()   metodu   **************** */
 
+
 veri = document.querySelectorAll("li");
 //* nodelist olarak geldıgı zaman for dongusunu kullanmadan forEach ı kullanarak cagırabılırız.
+
 
 veri.forEach(function(item, index){
     item.textContent=`${index} - item`;
