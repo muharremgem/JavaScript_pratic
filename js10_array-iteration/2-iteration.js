@@ -16,6 +16,7 @@ let sum = 0;
 prices.forEach((price) => (sum += price));
 console.log("SUM:", sum);
 
+
 //! NOT: forEach metodu void metottur.(Herhangi bir deger dondurmez)
 console.log(prices.forEach((price) => (sum += price))); //! undefined
 
@@ -29,6 +30,7 @@ prices.forEach((price, index, arr) => {
   console.log(`${index + 1}.iteration: ${total}`);
   arr[index] = Math.trunc(price * 1.1);
 });
+
 
 console.log(prices);
 
@@ -84,6 +86,7 @@ const products = [
 products.map((p, i, arr) => (arr[i] = p[0].toUpperCase() + p.slice(1)));
 console.log(products);
 
+
 //* ======================================================
 //*                CHAINING (PIPELINE)
 //* ======================================================
@@ -93,8 +96,10 @@ console.log(products);
 //* ======================================================
 const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
 
+
 //?-------------- ÖRNEK -------------------
 //? Maasi 10000'den buyuk olanlari ayri bir diziye saklayalim
+
 
 const bigThan = salaries.filter((s) => s > 10000);
 console.log(bigThan, salaries);
