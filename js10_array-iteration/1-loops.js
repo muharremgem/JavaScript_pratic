@@ -37,6 +37,8 @@ for (let i = 0; i < notlar.length; i++) {
 
 console.log("ORTALAMA:", toplam / notlar.length);
 
+
+
 //* ======================================================
 //*                   FOR-IN LOOP
 //* ======================================================
@@ -76,6 +78,8 @@ const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 //* kapsayacak sekilde guncellenmis halidir. Bu dongude dizi
 //* icersindeki veriye erisirken indisleme kullanmaya gerek yoktur.
 
+
+
 const findStudentsOf = (arr, search) => {
   let counter = 0;
   for (let item of arr) {
@@ -93,6 +97,7 @@ const findStudentsOf = (arr, search) => {
     ? `${search} can not be found`
     : `${search} found ${counter} times`;
 };
+
 
 const studentName = prompt("Please enter a name").toLowerCase();
 console.log(findStudentsOf(students, studentName));
