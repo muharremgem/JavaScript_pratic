@@ -1,5 +1,4 @@
 
-
 //* keyboard eventleri
 
 const text = document.getElementById("txtTaskName");
@@ -36,9 +35,9 @@ const text = document.getElementById("txtTaskName");
 
 text.addEventListener("keyup",run); 
 
-
 function run(e){
     console.log(e.type);
     console.log(e.target.value);  //* bu kodla hangı harfe tıkladıgımızı console da gösterir.
 
 }
+

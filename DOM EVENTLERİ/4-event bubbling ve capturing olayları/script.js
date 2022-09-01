@@ -18,7 +18,6 @@ const container = document.querySelector(".container");
 //     e.stopPropagation(); // sadece bublıng de kullanıyoruz 
 // });
 
-
 // card.addEventListener("click",function(e){
 //     console.log("card")
 //     e.stopPropagation();
@@ -31,8 +30,6 @@ const container = document.querySelector(".container");
 // });
 
 //* Event Capturıng ( dıştan içe dogru tetıklenme olur.)
-
-
 
 
 // form.addEventListener("click",function(e){
@@ -66,7 +63,7 @@ const container = document.querySelector(".container");
 //     })
 // });
 
-//* Aşagıdaki kod ile elementleri nasıl silebilecegimizin örnek kodu...
+//****** Aşagıdaki kod ile elementleri nasıl silebilecegimizin örnek kodu...
 
 const ul = document.querySelector("ul");
 

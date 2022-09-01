@@ -15,7 +15,6 @@ const ul = document.querySelector("#task-list")
 
 //btn.addEventListener("dblclick",run); //? çift tıklama yapılınca console da göstrir.
 
-
 //* mouse down
 
 //btn.addEventListener("mousedown",run); //* basılı kaldıgında down çalısır,tıklama bıttıgınde up çalısır bas çek;
@@ -44,8 +43,6 @@ const ul = document.querySelector("#task-list")
 //* mouse move event 
 
 ul.addEventListener("mousemove",run); //* sitede yaptıgımız hareketlerın hareket mıktarını gösterır.
-
-
 
 function run(event){
     console.log(`event type: ${event.type}`);

@@ -9,14 +9,15 @@ const btn2 = document.querySelector("#btnAddNewTask");
 // })
 
 //? yukarıdaki gibi de butona tıklandıgında söyleyecektır  ama aşagıdakı gıbı fonkıyon olusturursak herzaman ve istedigimiz yerde bu fonksiyonu kullanabılecegız.
-/*
+
 btn.addEventListener("click", btnClick);
 btn2.addEventListener("click", btnClick);//?burda yenıden kullanabıldık.
 
 function btnClick(){
     console.log("butona tıklandı");
 };
-*/
+
+
 
 //? bu kodda preventDefault kodunu kullanarak sayfanın herhangı bır yerınde butona tıklandıgında sayfanın basına gitmseini engellıyor tıklandıgı yrde sayfa kalıyor. (default oluyor.)
 
