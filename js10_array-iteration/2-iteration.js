@@ -94,7 +94,7 @@ console.log(products);
 //* ======================================================
 //*                 FILTER METHOD
 //* ======================================================
-const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 2500];
 
 
 //?-------------- ÖRNEK -------------------
@@ -110,6 +110,7 @@ console.log(range);
 //?-------------- ÖRNEK -------------------
 //? Maasi 9000'den az olanlara %10 zam yaparak bu degerleri
 //? yeni diziye saklayalim.
+
 
 const lessThan9000Increase = salaries
   .filter((s) => s < 9000)
