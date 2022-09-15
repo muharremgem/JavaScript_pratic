@@ -22,7 +22,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
   const guessInput = Number(document.querySelector(".guess-input").value);
   const msg = document.querySelector(".msg");
   const body = document.querySelector("body");
-/*
+/
   //? eger input girilmediyse Kullaniciya uyari ver.
   if (!guessInput) {
     msg.innerText = "Please enter a number";
@@ -58,7 +58,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
     document.querySelector(".score").textContent = score;
   }
 });
-*/
+
 /*
 //* again basildiginda oyunu baslangic dgerlerin kur
 document.querySelector(".again-btn").addEventListener("click", () => {
