@@ -59,7 +59,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
   }
 });
 
-/*
+/
 //* again basildiginda oyunu baslangic dgerlerin kur
 document.querySelector(".again-btn").addEventListener("click", () => {
   score = 10;
@@ -78,7 +78,7 @@ document.querySelector(".guess-input").addEventListener("keydown", (e) => {
     document.querySelector(".check-btn").click();
   }
 });
-*/
+
 //! LOCALSTORAGE- SESSIONSTORAGE
 // myObj = { a: 1, b: 2, c: 3 };
 // localStorage.setItem("OBJ", JSON.stringify(myObj));
