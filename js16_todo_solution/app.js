@@ -17,6 +17,7 @@ addBtn.addEventListener("click", () => {
             text: todoInput.value,
         };
         createListElement(newTodo);
+        todoInput.value = "";
     }
 
 });
@@ -28,8 +29,32 @@ const createListElement = (newTodo) => {
     li.setAttribute("id",newTodo.id);
 
 
-    const okIcon = document.createElement("li")
+    const okIcon = document.createElement("i")
     okIcon.setAttribute("class", "fas fa-check")
     li.appendChild(okIcon);
+
+    const p = document.createElement("p");
+    const pTextNode = document.createTextNode(newTodo.text);
+    p.appendChild(pTextNode);
+    li.appendChild(p);
+
+    const deleteIcon = document.createElement("i")
+    deleteIcon.setAttribute("class", "fas fa-trash")
+    li.appendChild(deleteIcon);
+
+
     console.log(li);
+
+    todoUl.appendChild(li);
 };
+
+todoInput.addEventListener("keydown", (e) => {
+    if(e.code === "Enter"){
+        addBtn.click();
+    }
+});
+
+window.onload = function(){
+    todoInput.focus();
+    
+}
