@@ -23,10 +23,13 @@ addBtn.addEventListener("click", () => {
 });
 
 const createListElement = (newTodo) => {
+    const {id, completed, text} = newTodo;
     
     const li = document.createElement("li")
     // li.id = newTodo.id;
-    li.setAttribute("id",newTodo.id);
+    li.setAttribute("id",id);
+
+    newTodo.completed && li.classList.add("checked");
 
 
     const okIcon = document.createElement("i")
@@ -34,7 +37,7 @@ const createListElement = (newTodo) => {
     li.appendChild(okIcon);
 
     const p = document.createElement("p");
-    const pTextNode = document.createTextNode(newTodo.text);
+    const pTextNode = document.createTextNode(text);
     p.appendChild(pTextNode);
     li.appendChild(p);
 
@@ -48,6 +51,17 @@ const createListElement = (newTodo) => {
     todoUl.appendChild(li);
 };
 
+
+todoUl.addEventListener("click", (e) => {
+
+    if(e.target.classList.contains("fa-trash")){
+        e.target.parentElement.remove();
+        
+    }
+
+
+})
+
 todoInput.addEventListener("keydown", (e) => {
     if(e.code === "Enter"){
         addBtn.click();
@@ -56,5 +70,5 @@ todoInput.addEventListener("keydown", (e) => {
 
 window.onload = function(){
     todoInput.focus();
-    
+
 }
