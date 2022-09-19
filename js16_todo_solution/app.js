@@ -26,6 +26,10 @@ const createListElement = (newTodo) => {
     const li = document.createElement("li")
     // li.id = newTodo.id;
     li.setAttribute("id",newTodo.id);
-    
 
+
+    const okIcon = document.createElement("li")
+    okIcon.setAttribute("class", "fas fa-check")
+    li.appendChild(okIcon);
+    console.log(li);
 };
