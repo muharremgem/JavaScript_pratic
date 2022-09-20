@@ -99,29 +99,31 @@
 
 //* Prototype Tabanlı Miras Alma 
 
-let Person = function(name,yearOfBirth,job){
-    this.name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
-}
+// let Person = function(name,yearOfBirth,job){
+//     this.name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
+// }
 
-Person.prototype.calculateAge = function(){
-    return 2022 - this.yearOfBirth;
-}
+// Person.prototype.calculateAge = function(){
+//     return 2022 - this.yearOfBirth;
+// }
 
-let Teacher = function(name,yearOfBirth,job,subject){
+// let Teacher = function(name,yearOfBirth,job,subject){
     
-    Person.call(this,yearOfBirth,job);
-    this.subject = subject;
-}
+//     Person.call(this,yearOfBirth,job);
+//     this.subject = subject;
+// }
 
-Teacher.prototype = Object.create(Person.prototype);
+// Teacher.prototype = Object.create(Person.prototype);
 
 
 
-Teacher.prototype.constructor = Teacher;
+// Teacher.prototype.constructor = Teacher;
 
-let aylin = new Teacher("aylin", 1980, "teacher", "english")
+// let aylin = new Teacher("aylin", 1980, "teacher", "english")
 
-console.log(aylin);
-console.log(aylin.calculateAge());
+// console.log(aylin);
+
+
+// console.log(aylin.calculateAge());
