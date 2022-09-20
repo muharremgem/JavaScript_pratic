@@ -111,8 +111,17 @@ Person.prototype.calculateAge = function(){
 
 let Teacher = function(name,yearOfBirth,job,subject){
     
-    Person.call(this,)
+    Person.call(this,yearOfBirth,job);
     this.subject = subject;
-    
-
 }
+
+Teacher.prototype = Object.create(Person.prototype);
+
+
+
+Teacher.prototype.constructor = Teacher;
+
+let aylin = new Teacher("aylin", 1980, "teacher", "english")
+
+console.log(aylin);
+console.log(aylin.calculateAge());
