@@ -6,6 +6,17 @@ const addBtn = document.getElementById("todo-button");
 const todoInput = document.getElementById("todo-input");
 const todoUl = document.getElementById("todo-ul");
 
+let todos = JSON.parse(localStorage.getItem("TODOS")) || [];  
+console.log(todos);
+
+const renderSavedTodos = () =>{
+    todos.forEach(todo => {
+        createListElement(todo);
+        
+    });
+};
+
+renderSavedTodos();
 
 addBtn.addEventListener("click", () => {
     if(todoInput.value.trim() === ""){
@@ -16,13 +27,19 @@ addBtn.addEventListener("click", () => {
             completed:false,
             text: todoInput.value,
         };
+
+
         createListElement(newTodo);
+
+        todos.push(newTodo);
+
+        localStorage.setItem("TODOS",JSON.stringify(todos));
         todoInput.value = "";
     }
 
 });
 
-const createListElement = (newTodo) => {
+function createListElement (newTodo){
     const {id, completed, text} = newTodo;
     
     const li = document.createElement("li")
@@ -56,12 +73,17 @@ todoUl.addEventListener("click", (e) => {
 
     if(e.target.classList.contains("fa-trash")){
         e.target.parentElement.remove();
-        
     }
 
+    todos = todos.filter((todo)=> todo.id !== id) 
 
-})
+    if(e.target.classList.contains("fa-check")){
+        e.target.parentElement.classList.toggle("checked");
+    }
+});
 
+    
+    
 todoInput.addEventListener("keydown", (e) => {
     if(e.code === "Enter"){
         addBtn.click();
@@ -71,4 +93,4 @@ todoInput.addEventListener("keydown", (e) => {
 window.onload = function(){
     todoInput.focus();
 
-}
+};
