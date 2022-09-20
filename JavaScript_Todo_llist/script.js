@@ -14,7 +14,6 @@ const taskList = document.querySelector("#task-list");
 
 let todos;
 
-
 //* load items
 
 loadItems();
